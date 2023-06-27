@@ -1,0 +1,34 @@
+div{
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;    
+}
+
+.header{
+    background-color: aquamarine;
+}
+
+.nav-bar{
+    background-color: green;
+}
+
+.index{
+    background-color: brown;
+}
+
+.home{
+    background-color: cadetblue;
+}
+
+.footer{
+    background-color: chocolate;
+}
+
+.footerConfig{
+    background-color: #555;
+}
+
+.header, .nav-bar, .home, .index, .footer, .footerConfig{
+    padding: 20px;
+}

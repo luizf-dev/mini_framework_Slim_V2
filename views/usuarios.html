@@ -1,0 +1,20 @@
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Senha</th>
+      </tr>
+    </thead>
+    <tbody> 
+        {loop="$users"}    
+          <tr>
+            <td>{$value.idUser}</td>
+            <td>{$value.nome}</td>
+            <td>{$value.email}</td>
+            <td>{$value.senha}</td>
+          </tr>
+        {/loop}             
+    </tbody>
+  </table>
