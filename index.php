@@ -9,7 +9,14 @@ use framework\DB\Sql;
 use framework\Page;
 use framework\User;
 
-
+//* ===================================================//
+//* Neste arquivo as configurações e parametros =======//
+//* de conexao com a base de dados estão comentadas ===//
+//* na rota de usuarios, na chamada do template =======//
+//* para evitar erro ao renderizar a página, ========//
+//* se for conectar com o banco, descomentar trechos =//
+//* de código que estão comentados. ===================//
+//* ===================================================//
 
 $app = new Slim();
 
@@ -22,8 +29,6 @@ $app->get('/', function() {
 	$page->renderPage("index");
 });
 
-
-
 //*Rota home ---------------------------
 $app->get('/home', function() {
 
@@ -33,26 +38,23 @@ $app->get('/home', function() {
 });
 //*--------------------------------------
 
-
-
-
 //*Rota listar usuarios------------------
 $app->get('/usuarios', function(){
 
 	//*Conexao com a base de dados
-	$connect = Sql::getDatabase();
+	//$connect = Sql::getDatabase();
 	
 
 	//*Instancia de um novo objeto User passando a variavel de conexao
 	//* e chamando o método listar usuarios
-	$user = new User($connect);
-	$users = $user->listarUsuarios();
+	//$user = new User($connect);
+	//$users = $user->listarUsuarios();
 	
 
 	//* Renderiza o template usuarios.html passando a lista de usuários
     $page = new Page();
     $page->renderPage("usuarios", array(
-		"users" => $users
+		//"users" => $users
 	));		
 
 });

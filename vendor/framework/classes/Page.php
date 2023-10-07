@@ -46,7 +46,7 @@ class Page{
         //* Configuração do RainTPL
         $config = array(
             "tpl_dir"   => $tpl_dir,
-            "cache_dir" => "./views-cache/",
+            "cache_dir" => "../views-cache/",
             "debug" => true
            );
 
