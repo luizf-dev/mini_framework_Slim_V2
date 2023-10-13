@@ -38,7 +38,7 @@ class Page{
      * 1 parametro $opts para as Opções personalizadas no template
      * 2 parametro $tpl_dir para o caminho do Diretório dos templates
      */
-    public function __construct($opts = array(),  $tpl_dir = "views/"){
+    public function __construct($opts = array(),  $tpl_dir = "./views/"){
 
         //* Mescla as opções passadas com as opções padrão
         $this->options = array_merge($this->defaults, $opts);
@@ -46,7 +46,7 @@ class Page{
         //* Configuração do RainTPL
         $config = array(
             "tpl_dir"   => $tpl_dir,
-            "cache_dir" => "../views-cache/",
+            "cache_dir" => "./views-cache/",
             "debug" => true
            );
 

@@ -9,14 +9,14 @@ use framework\DB\Sql;
 use framework\Page;
 use framework\User;
 
-//* ===================================================//
-//* Neste arquivo as configurações e parametros =======//
-//* de conexao com a base de dados estão comentadas ===//
-//* na rota de usuarios, na chamada do template =======//
-//* para evitar erro ao renderizar a página, ========//
-//* se for conectar com o banco, descomentar trechos =//
-//* de código que estão comentados. ===================//
-//* ===================================================//
+//* ===========================================================//
+//* Neste arquivo as configurações e parametros ==============//
+//* de conexao com a base de dados estão comentadas =========//
+//* na rota de usuarios, na chamada do template=============//
+//* para evitar erro ao renderizar a página!       ========//
+//* Se você for conectar com o banco,descomentar trechos =//
+//* de código que estão comentados. =====================//
+//* ====================================================//
 
 $app = new Slim();
 
